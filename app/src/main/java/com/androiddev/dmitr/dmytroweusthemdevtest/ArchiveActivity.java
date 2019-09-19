@@ -44,13 +44,12 @@ public class ArchiveActivity extends AppCompatActivity {
 
         listViewData = new ArrayList<String>();
         listViewData.add("Archived_Item1");
-        listViewData.add("Archived_Item1");
-        listViewData.add("Archived_Item1");
+        listViewData.add("Archived_Item2");
+        listViewData.add("Archived_Item3");
         arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,listViewData){
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
                 TextView item = (TextView) super.getView(position,convertView,parent);
-                //item.setTextColor(Color.parseColor("black"));
                 item.setTypeface(item.getTypeface(), Typeface.NORMAL);
                 item.setTextSize(TypedValue.COMPLEX_UNIT_DIP,18);
                 return item;
@@ -82,6 +81,8 @@ public class ArchiveActivity extends AppCompatActivity {
                 break;
             case R.id.search:
                 Toast.makeText(this, "Search clicked ", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, SearchActivity.class);
+                startActivity(intent);
                 break;
             case R.id.sent:
                 Toast.makeText(this, "Sent clicked ", Toast.LENGTH_SHORT).show();

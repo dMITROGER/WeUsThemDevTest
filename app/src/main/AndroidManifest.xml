@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ArchiveActivity"></activity>
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".ArchiveActivity" />
         <activity android:name=".SentActivity" />
         <activity android:name=".NewMessage" />
         <activity android:name=".MainActivity">

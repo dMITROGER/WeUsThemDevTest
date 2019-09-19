@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(R.string.inbox);
         toolbar.setLogo(R.drawable.logo);
 
+
     }
 
     private void loadInboxMailList() {
@@ -47,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
         listViewData = new ArrayList<String>();
         listViewData.add("Inbox_Item1");
-        listViewData.add("Inbox_Item1");
-        listViewData.add("Inbox_Item1");
+        listViewData.add("Inbox_Item2");
+        listViewData.add("Inbox_Item3");
         arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,listViewData){
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
@@ -80,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.search:
                 Toast.makeText(this, "Search clicked ", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, SearchActivity.class);
+                startActivity(intent);
                 break;
             case R.id.sent:
                 Toast.makeText(this, "Sent clicked ", Toast.LENGTH_SHORT).show();
@@ -125,4 +128,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+
 }

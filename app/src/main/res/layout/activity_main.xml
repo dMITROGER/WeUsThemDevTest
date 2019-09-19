@@ -15,7 +15,10 @@
         android:minHeight="?attr/actionBarSize"
         android:background="@color/colorBlue"
         app:titleMarginStart="30dp"
-        android:elevation="4dp"/>
+        android:elevation="4dp">
+
+    </android.support.v7.widget.Toolbar>
+
 
     <ListView
         android:id="@+id/listviewInbox"

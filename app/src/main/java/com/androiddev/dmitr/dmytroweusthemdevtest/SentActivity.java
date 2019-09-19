@@ -44,8 +44,8 @@ public class SentActivity extends AppCompatActivity {
 
         listViewData = new ArrayList<String>();
         listViewData.add("Sent_Item1");
-        listViewData.add("Sent_Item1");
-        listViewData.add("Sent_Item1");
+        listViewData.add("Sent_Item2");
+        listViewData.add("Sent_Item3");
         arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,listViewData){
             @Override
             public View getView(int position, View convertView, ViewGroup parent){
@@ -82,6 +82,8 @@ public class SentActivity extends AppCompatActivity {
                 break;
             case R.id.search:
                 Toast.makeText(this, "Search clicked ", Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, SearchActivity.class);
+                startActivity(intent);
                 break;
             case R.id.sent:
                 Toast.makeText(this, "Sent clicked ", Toast.LENGTH_SHORT).show();

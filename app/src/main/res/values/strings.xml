@@ -6,4 +6,6 @@
     <string name="new_message">New Message</string>
     <string name="sent">Sent</string>
     <string name="archived">Archived</string>
+    <string name="text">Search text</string>
+    <string name="search">Search</string>
 </resources>
