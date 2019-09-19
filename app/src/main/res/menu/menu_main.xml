@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addItem"
+        android:title="New message"
+        android:orderInCategory="100"
+        android:icon="@drawable/add"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:orderInCategory="101"
+        android:icon="@drawable/magnifier"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/inbox"
+        android:title="Inbox"
+        android:orderInCategory="1"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/sent"
+        android:title="Sent"
+        android:orderInCategory="2"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/archive"
+        android:title="Archive"
+        android:orderInCategory="3"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>

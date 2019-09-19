@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DmytroWeUsThemDevTest</string>
+    <string name="inbox">Inbox</string>
+    <string name="to">To</string>
+    <string name="re">Re</string>
+    <string name="new_message">New Message</string>
+    <string name="sent">Sent</string>
+    <string name="archived">Archived</string>
+</resources>
